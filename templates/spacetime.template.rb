@@ -4,7 +4,7 @@ class Spacetime < Formula
   homepage "https://spacetimedb.net"
 
   version "{RELEASE}"
-  url "https://download.spacetimedb.net/{VERSION}/spacetime-{VERSION}.darwin-universal.tgz"
+  url "https://install.spacetimedb.net/{VERSION}/spacetime-{VERSION}.darwin-universal.tgz"
   sha256 "{VERHASH}"
 
   def install
