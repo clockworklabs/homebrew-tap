@@ -3,9 +3,9 @@ class Spacetime < Formula
   desc "A command line interface for SpacetimeDB"
   homepage "https://spacetimedb.net"
 
-  version "0.2.4"
-  url "http://install.spacetimedb.net/0.2.4/spacetime-0.2.4.darwin-universal.tgz"
-  sha256 "ac48b3b3eccb664e7fb06f6732ee1e5bf09151bc5a5d06d3b12c5647de2b5a61"
+  version "0.3.0"
+  url "http://install.spacetimedb.net/0.3.0/spacetime-0.3.0.darwin-universal.tgz"
+  sha256 "1ae12a0923631b5d8150e3215f04970a626a6726d24bd185af12e8c073f7228f"
 
   def install
     bin.install "spacetime"
