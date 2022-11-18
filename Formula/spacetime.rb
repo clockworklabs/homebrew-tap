@@ -5,7 +5,7 @@ class Spacetime < Formula
 
   version "0.3.0"
   url "http://install.spacetimedb.net/0.3.0/spacetime-0.3.0.darwin-universal.tgz"
-  sha256 "5d618d8ef56bdc2037382e1128e1bc2e032eae946b5ccb7d7013cf432c64604b"
+  sha256 "29d90561a247044afd097c335a62f39cbc7cf4eec6a57302cd75af7aae12e5f8"
 
   def install
     bin.install "spacetime"
