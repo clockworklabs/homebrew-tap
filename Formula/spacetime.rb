@@ -1,11 +1,11 @@
 class Spacetime < Formula
 
   desc "A command line interface for SpacetimeDB"
-  homepage "https://spacetimedb.net"
+  homepage "https://spacetimedb.com"
 
-  version "0.3.1"
-  url "http://install.spacetimedb.net/0.3.1/spacetime-0.3.1.darwin-universal.tgz"
-  sha256 "89c4d0e3795d672e1cbdfe9050f6cf650170a791917d151df857cae1b70fbce9"
+  version "0.3.2"
+  url "http://install.spacetimedb.net/spacetime-homebrew.tar.gz"
+  sha256 "f9771bf103d93474bb3bbb702045abeb6670c64d71124c05a5789098619d1c6d"
 
   def install
     bin.install "spacetime"
@@ -16,5 +16,4 @@ class Spacetime < Formula
   test do
     system "#{bin}/spacetime version"
   end
-
 end
