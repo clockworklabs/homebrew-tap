@@ -18,8 +18,6 @@ class Spacetime < Formula
     bin.install "spacetime"
   end
 
-  plist_options :manual => "spacetime help"
-
   test do
     system "#{bin}/spacetime version"
   end
