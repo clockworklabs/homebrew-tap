@@ -3,7 +3,7 @@ class Spacetime < Formula
   desc "A command line interface for SpacetimeDB"
   homepage "https://spacetimedb.com"
 
-  version "0.6.0"
+  version "0.6.1"
 
   if Hardware::CPU.arm?
     url "https://github.com/clockworklabs/SpacetimeDB/releases/latest/download/spacetime.darwin-arm64.tar.gz"
