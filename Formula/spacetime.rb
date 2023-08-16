@@ -10,7 +10,7 @@ class Spacetime < Formula
     sha256 "40c553be7246d709a08ccf07a20e73db2503127853c256b3de9fff4a95062db2"
   else
     url "https://github.com/clockworklabs/SpacetimeDB/releases/latest/download/spacetime.darwin-amd64.tar.gz"
-    sha256 "dfd424d500367a6c09a95c5f4fe172e7187897c69537621f07f2eb0e3ec59e31"
+    sha256 "b92d0303fae98ad582adb4e45a3eb6689f440de03c3fea97e461fba659a6edf4"
   end
 
 
