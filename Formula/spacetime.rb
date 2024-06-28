@@ -3,14 +3,14 @@ class Spacetime < Formula
   desc "A command line interface for SpacetimeDB"
   homepage "https://spacetimedb.com"
 
-  version "0.10.0"
+  version "0.10.1"
 
   if Hardware::CPU.arm?
-    url "https://github.com/clockworklabs/SpacetimeDB/releases/download/v0.10.0-beta/spacetime.darwin-arm64.tar.gz"
-    sha256 "572edb01f4617af4b63b5ae54ea08e3b6da21fccd4980588d7324e1cfbc835e3"
+    url "https://github.com/clockworklabs/SpacetimeDB/releases/download/v0.10.1-beta/spacetime.darwin-arm64.tar.gz"
+    sha256 "f0cfaed5860840c339b043feeb4d6023640c7197b0a55a67e6d2c8e20965ddd9"
   else
-    url "https://github.com/clockworklabs/SpacetimeDB/releases/download/v0.10.0-beta/spacetime.darwin-amd64.tar.gz"
-    sha256 "827cc7695a16debd955db6dcb5767babb3eda4a57691c21b7f0e2d378ddf6b05"
+    url "https://github.com/clockworklabs/SpacetimeDB/releases/download/v0.10.1-beta/spacetime.darwin-amd64.tar.gz"
+    sha256 "51cb3ccf2444f8f025ff76f384358dd0a28844e371d6a0c27575ec190c0e2752"
   end
 
 
