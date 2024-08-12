@@ -6,11 +6,11 @@ class Spacetime < Formula
   version "0.10.1"
 
   if Hardware::CPU.arm?
-    url "https://github.com/clockworklabs/SpacetimeDB/releases/download/v0.10.1-beta/spacetime.darwin-arm64.tar.gz"
-    sha256 "f0cfaed5860840c339b043feeb4d6023640c7197b0a55a67e6d2c8e20965ddd9"
+    url "https://github.com/clockworklabs/SpacetimeDB/releases/download/v0.11.0-beta/spacetime.darwin-arm64.tar.gz"
+    sha256 "e626102545433d1f7ef589706308294a56f1c35abb08e29c813a31d1a4e7230b"
   else
-    url "https://github.com/clockworklabs/SpacetimeDB/releases/download/v0.10.1-beta/spacetime.darwin-amd64.tar.gz"
-    sha256 "51cb3ccf2444f8f025ff76f384358dd0a28844e371d6a0c27575ec190c0e2752"
+    url "https://github.com/clockworklabs/SpacetimeDB/releases/download/v0.11.0-beta/spacetime.darwin-amd64.tar.gz"
+    sha256 "5a494a5c8a24dad18aa8dc69d8b607b3af08b1f2dbc9456d73c19efd80ab994d"
   end
 
 
