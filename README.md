@@ -1,6 +1,6 @@
 # Clockwork Labs Homebrew Tap
 
-This is a custom [Homebrew](https://brew.sh) tap for Clockwork Labs.
+This is an official [Homebrew](https://brew.sh) tap for Clockwork Labs.
 
 ### Latest release
 
