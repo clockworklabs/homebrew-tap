@@ -1,6 +1,6 @@
-# Clockwork Labs Homebrew Tap
+# SpacetimeDB Homebrew Tap
 
-This is a custom [Homebrew](https://brew.sh) tap for Clockwork Labs.
+This is the official [Homebrew](https://brew.sh) tap for SpacetimeDB. For platforms other than macOS, please see our [install page](https://spacetimedb.com/install) for instructions on how to install SpacetimeDB.
 
 ### Latest release
 
