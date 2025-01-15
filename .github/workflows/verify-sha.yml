@@ -31,11 +31,11 @@ jobs:
 
       - name: Verify ARM tarball
         run: |
-          curl -L "$URL_ARM" -o spacetime-arm.tar.gz
+          curl -s -L "$URL_ARM" -o spacetime-arm.tar.gz
           echo "$SHA_ARM  spacetime-arm.tar.gz" | sha256sum --check
 
       - name: Verify AMD tarball
         run: |
-          curl -L "$URL_AMD" -o spacetime-amd.tar.gz
+          curl -s -L "$URL_AMD" -o spacetime-amd.tar.gz
           echo "$SHA_AMD  spacetime-amd.tar.gz" | sha256sum --check
 
