@@ -1,0 +1,41 @@
+name: Verify Spacetime SHA Hashes
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  verify-sha:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Parse ARM/AMD URL and SHA from Formula/spacetime.rb
+        id: parse
+        run: |
+          # Extract ARM url and sha256 (between `if Hardware::CPU.arm?` and `else`)
+          URL_ARM=$(awk '/if Hardware::CPU.arm\?/,/else/' Formula/spacetime.rb | grep 'url' | sed 's/.*"\(.*\)".*/\1/')
+          SHA_ARM=$(awk '/if Hardware::CPU.arm\?/,/else/' Formula/spacetime.rb | grep 'sha256' | sed 's/.*"\(.*\)".*/\1/')
+
+          # Extract AMD url and sha256 (between `else` and `end`)
+          URL_AMD=$(awk '/else/,/end/' Formula/spacetime.rb | grep 'url' | sed 's/.*"\(.*\)".*/\1/')
+          SHA_AMD=$(awk '/else/,/end/' Formula/spacetime.rb | grep 'sha256' | sed 's/.*"\(.*\)".*/\1/')
+
+          echo "URL_ARM=$URL_ARM" >> $GITHUB_ENV
+          echo "SHA_ARM=$SHA_ARM" >> $GITHUB_ENV
+          echo "URL_AMD=$URL_AMD" >> $GITHUB_ENV
+          echo "SHA_AMD=$SHA_AMD" >> $GITHUB_ENV
+
+      - name: Verify ARM tarball
+        run: |
+          curl -s -L "$URL_ARM" -o spacetime-arm.tar.gz
+          echo "$SHA_ARM  spacetime-arm.tar.gz" | sha256sum --check
+
+      - name: Verify AMD tarball
+        run: |
+          curl -s -L "$URL_AMD" -o spacetime-amd.tar.gz
+          echo "$SHA_AMD  spacetime-amd.tar.gz" | sha256sum --check
+
