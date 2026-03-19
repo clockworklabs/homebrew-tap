@@ -1,11 +1,5 @@
-# SpacetimeDB Homebrew Tap
+# Deprecation Notice
 
-This is the official [Homebrew](https://brew.sh) tap for SpacetimeDB. For platforms other than macOS, please see our [install page](https://spacetimedb.com/install) for instructions on how to install SpacetimeDB.
+**The official SpacetimeDB Homebrew Tap is deprecated.**
 
-### Latest release
-
-You can install the package in one command:
-
-```bash
-brew install clockworklabs/tap/spacetime
-```
+Please see our [install page](https://spacetimedb.com/install) for instructions on how to install SpacetimeDB.
